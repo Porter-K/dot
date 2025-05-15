@@ -1,6 +1,7 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
+config.keys = require('keys')
 config.color_scheme = 'Tango (terminal.sexy)'
 -- config.colors = require 'themes/customColors'
 
@@ -14,17 +15,5 @@ config.font_size = 14
 
 config.scrollback_lines = 10000
 
-config.keys = {
-  {
-    key = 'h',
-    mods = 'ALT',
-    action = wezterm.action.ActivateTabRelative(-1),
-  },
-  {
-    key = 'l',
-    mods = 'ALT',
-    action = wezterm.action.ActivateTabRelative(1),
-  },
-}
 
 return config
