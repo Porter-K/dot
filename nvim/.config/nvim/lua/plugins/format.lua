@@ -30,6 +30,9 @@ return {
 					css = {
 						require("formatter.filetypes.css").prettierd,
 					},
+          python = {
+            require("formatter.filetypes.python").black,
+          },
 					["*"] = {
 						require("formatter.filetypes.any").remove_trailing_whitespace,
 					},

@@ -8,6 +8,7 @@ return {
 	},
 	{
 		"rhysd/conflict-marker.vim",
+    event = "VeryLazy",
 	},
 	{
 		"tpope/vim-fugitive",

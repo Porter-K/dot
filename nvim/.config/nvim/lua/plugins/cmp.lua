@@ -10,7 +10,7 @@ return {
 			"L3MON4D3/LuaSnip",
 			"saadparwaiz1/cmp_luasnip",
 		},
-
+    event = "VeryLazy",
 		config = function()
 			local cmp = require("cmp")
 			cmp.setup({
@@ -32,8 +32,8 @@ return {
 					["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 				}),
 				sources = cmp.config.sources({
-					{ name = "nvim_lsp" },
-					{ name = "vsnip" }, -- For vsnip users.
+					-- { name = "nvim_lsp" },
+					-- { name = "vsnip" }, -- For vsnip users.
 					{ name = "luasnip" }, -- For luasnip users.
 					-- { name = 'ultisnips' }, -- For ultisnips users.
 					-- { name = 'snippy' }, -- For snippy users.

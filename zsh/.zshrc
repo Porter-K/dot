@@ -4,8 +4,8 @@ autoload -Uz compinit && compinit
 
 export _ZO_ECHO='1'
 eval "$(zoxide init zsh)"
-alias ls='exa'
-alias la='exa -la'
+alias ls='eza'
+alias la='eza -la'
 alias tree='eza --tree -la'
 alias zshconfig="nvim ~/.zshrc"
 export EDITOR='/usr/bin/nvim'
@@ -17,9 +17,9 @@ SAVEHIST=100000
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
 
-eval "$(thefuck --alias)"
-eval "$(starship init zsh)"
-export DOT="/home/kyleporter/.dotfiles"
+# eval "$(thefuck --alias)"
+# eval "$(starship init zsh)"
+# export DOT="/home/kyleporter/.dotfiles"
 
 # Yazi
 function y() {

@@ -29,14 +29,12 @@ return {
   },
   {
     "jay-babu/mason-nvim-dap.nvim",
-    keys = {},
+    event = "VeryLazy",
     dependencies = {
       "mwilliamboman/mason.nvim",
     },
     config = function()
-      require("mason-nvim-dap").setup()
       require("mason-nvim-dap").setup({
-        ensure_installed = { "firefox-debug-adapter" },
         handlers = {},
       })
     end,
