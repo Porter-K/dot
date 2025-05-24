@@ -17,7 +17,7 @@ SAVEHIST=100000
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
 
-# eval "$(thefuck --alias)"
+eval "$(thefuck --alias)"
 # eval "$(starship init zsh)"
 # export DOT="/home/kyleporter/.dotfiles"
 
@@ -30,3 +30,4 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+export PATH="$PATH:/home/user/.cargo/bin"
