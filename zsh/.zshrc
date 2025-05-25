@@ -1,6 +1,15 @@
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 autoload -Uz compinit && compinit
+autoload -Uz vcs_info # enable vcs_info
+zstyle ':vcs_info:*' formats '%F{red}%b%f' # git(main)
+
+setopt PROMPT_SUBST
+
+precmd () { vcs_info } # always load before displaying the prompt
+PS1='[%j] %F{blue}%0~%f $vcs_info_msg_0_ %F{yellow}%(!.#.$)%f ' # [processes] cwd branch $
+
+RPROMPT="%T"
 
 export _ZO_ECHO='1'
 eval "$(zoxide init zsh)"

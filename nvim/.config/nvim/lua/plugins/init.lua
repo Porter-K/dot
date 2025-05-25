@@ -32,5 +32,15 @@ return {
         config = function()
             require('ibl').setup()
         end,
-    }
+    },
+    {
+        "folke/tokyonight.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
+        style = "night",
+        config = function()
+            require('tokyonight').setup()
+        end,
+    },
 }

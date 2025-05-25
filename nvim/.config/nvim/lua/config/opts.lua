@@ -7,3 +7,6 @@ opt.scrolloff = 10
 opt.number = true
 opt.relativenumber = true
 opt.cursorline = true
+opt.termguicolors = true
+vim.cmd 'colorscheme tokyonight'
+
