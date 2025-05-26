@@ -1,6 +1,5 @@
 local opt = vim.opt
--- vim.opt.tabstop = 2
--- vim.opt.shiftwidth = 2
+local cmd = vim.cmd
 opt.expandtab = true
 
 opt.scrolloff = 10
@@ -8,5 +7,4 @@ opt.number = true
 opt.relativenumber = true
 opt.cursorline = true
 opt.termguicolors = true
-vim.cmd 'colorscheme tokyonight'
-
+cmd 'colorscheme tokyonight'

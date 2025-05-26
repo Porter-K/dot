@@ -30,6 +30,8 @@ eval "$(thefuck --alias)"
 # eval "$(starship init zsh)"
 # export DOT="/home/kyleporter/.dotfiles"
 
+eval "$(ssh-agent -s)"
+
 # Yazi
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
