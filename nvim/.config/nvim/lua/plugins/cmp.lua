@@ -3,6 +3,7 @@ return {
 	{
 		"hrsh7th/nvim-cmp",
 		dependencies = {
+            "neovim/nvim-lspconfig",
 			"hrsh7th/cmp-nvim-lsp",
 			"hrsh7th/cmp-buffer",
 			"hrsh7th/cmp-path",
@@ -80,10 +81,9 @@ return {
 
 			-- Set up lspconfig.
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-			-- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-			--require("lspconfig")["<YOUR_LSP_SERVER>"].setup({
-				--capabilities = capabilities,
-			--})
+            require("lspconfig")["rust_analyzer"].setup({
+                capabilities = capabilities,
+            })
 		end,
 	},
 }

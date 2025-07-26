@@ -2,6 +2,9 @@ local opt = vim.opt
 local cmd = vim.cmd
 opt.expandtab = true
 
+opt.shiftwidth = 2
+opt.tabstop = 2
+
 opt.scrolloff = 10
 opt.number = true
 opt.relativenumber = true
