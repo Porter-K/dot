@@ -4,7 +4,7 @@ return {
 		config = function()
 			require("lualine").setup({
 				options = {
-					theme = "tokyonight",
+                    theme = "tokyonight",
 					section_seperators = "",
 					component_seperators = "",
 					icons_enabled = true,
