@@ -1,4 +1,4 @@
-vim.keymap.set('i', "jj", "<esc>")
+vim.keymap.set("i", "jj", "<esc>")
 vim.keymap.set("n", "g/", ":noh<CR>") -- Clear search query
 
 -- Switch panes

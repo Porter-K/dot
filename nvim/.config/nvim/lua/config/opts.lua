@@ -10,4 +10,4 @@ opt.number = true
 opt.relativenumber = true
 opt.cursorline = true
 opt.termguicolors = true
-cmd 'colorscheme tokyonight'
+cmd("colorscheme tokyonight")
