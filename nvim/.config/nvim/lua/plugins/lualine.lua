@@ -9,7 +9,7 @@ return {
 					component_seperators = "",
 					icons_enabled = true,
 				},
-				dependencies = { "nvim-tree/nvim-web-devicons" },
+                dependencies = { "echasnovski/mini.icons" },
 				sections = {
 					lualine_a = { "mode" },
 					lualine_b = {
