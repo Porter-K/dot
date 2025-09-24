@@ -1,11 +1,11 @@
 return {
-  {
-    "lewis6991/gitsigns.nvim",
-    config = function()
-      require("gitsigns").setup()
-    end,
-  },
-  {
-    "rhysd/conflict-marker.vim",
-  },
+    {
+        "lewis6991/gitsigns.nvim",
+        config = function()
+            require("gitsigns").setup()
+        end,
+    },
+    {
+        "rhysd/conflict-marker.vim",
+    },
 }
