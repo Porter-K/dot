@@ -17,6 +17,7 @@ alias la='eza -la'
 alias tree='eza --tree -la'
 alias zshconfig="nvim ~/.zshrc"
 alias addssh=~/scripts/ssh/ssh.sh
+alias :q=exit
 export EDITOR='/usr/bin/nvim'
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
