@@ -26,6 +26,9 @@ return {
                         "prettier",
                         stop_after_first = true,
                     },
+                    zig = {
+                        "zig",
+                    },
                 },
             })
         end,

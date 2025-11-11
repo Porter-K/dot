@@ -27,3 +27,6 @@ local fzf = require("fzf-lua")
 key.set("n", "<Leader>ff", fzf.files)
 key.set("n", "<Leader>fg", fzf.grep)
 key.set("n", "<Leader>fa", fzf.builtin)
+
+key.set("n", "<Leader>cr", "<cmd>lua vim.lsp.buf.rename()<CR>")
+key.set("n", "<Leader>cq", "<cmd>lua vim.lsp.buf.code_action()<CR>")

@@ -28,7 +28,6 @@ export _ZO_ECHO='1'
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
 eval "$(thefuck --alias)"
-eval "$(ssh-agent -s)"
 
 
 export PATH="$PATH:/home/user/.cargo/bin"
@@ -47,3 +46,5 @@ function y() {
 [[ -f /home/user/.dart-cli-completion/zsh-config.zsh ]] && . /home/user/.dart-cli-completion/zsh-config.zsh || true
 source ~/.zsh_spotify
 source ~/.zsh_bitwarden
+
+export PATH=$PATH:/opt/cisco/secureclient/bin
