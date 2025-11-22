@@ -19,7 +19,7 @@ alias zshconfig="nvim ~/.zshrc"
 alias addssh=~/scripts/ssh/ssh.sh
 alias :q=exit
 export EDITOR='/usr/bin/nvim'
-HISTFILE="$HOME/.zsh_history"
+HISTFILE="$XDG_DATA_HOME/zsh/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=100000
 # setopt SHARE_HISTORY
@@ -27,8 +27,8 @@ SAVEHIST=100000
 export _ZO_ECHO='1'
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
-eval "$(thefuck --alias)"
-eval "$(ssh-agent -s)"
+# eval "$(thefuck --alias)"
+# eval "$(ssh-agent -s)"
 
 
 export PATH="$PATH:/home/user/.cargo/bin"
@@ -45,5 +45,5 @@ function y() {
 
 # Completion
 [[ -f /home/user/.dart-cli-completion/zsh-config.zsh ]] && . /home/user/.dart-cli-completion/zsh-config.zsh || true
-source ~/.zsh_spotify
-source ~/.zsh_bitwarden
+# source ~/.zsh_spotify
+# source ~/.zsh_bitwarden

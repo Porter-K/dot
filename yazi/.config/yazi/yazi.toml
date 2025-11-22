@@ -2,7 +2,7 @@ play = [
     { run = 'vlc "$@"', desc = "VLC", orphan = true }
 ]
 
-[manager]
+[mgr]
 linemode = "size" # default = "none"
 ratio = [2, 3, 5] # default = [1, 4, 3]
 
