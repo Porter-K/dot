@@ -1,0 +1,16 @@
+export XDG_CONFIG_HOME="$HOME"/.config
+export XDG_DATA_HOME="$HOME"/.local/share
+export XDG_STATE_HOME="$HOME"/.local/state
+export XDG_CACHE_HOME="$HOME"/.cache
+export ZDOTDIR=$HOME/.config/zsh
+export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export GTK_THEME=Adwaita:dark
+export GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
+export QT_STYLE_OVERRIDE=Adwaita-Dark
+export SSH_AUTH_SOCK=/home/user/.bitwarden-ssh-agent.sock
+export PATH=$PATH:$CARGO_HOME/bin
+export PYTHONSTARTUP="$XDG_CONFIG_HOME"/python/pythonrc
+export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
+export MAXIMA_USERDIR="$XDG_CONFIG_HOME"/maxima
+export PATH="/home/user/.local/share/../bin:$PATH"

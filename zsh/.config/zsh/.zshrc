@@ -18,7 +18,10 @@ alias tree='eza --tree -la'
 alias zshconfig="nvim ~/.zshrc"
 alias addssh=~/scripts/ssh/ssh.sh
 alias :q=exit
+alias cl=clear
+alias hx=helix
 export EDITOR='/usr/bin/nvim'
+export PAGER='bat'
 HISTFILE="$XDG_DATA_HOME/zsh/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=100000
@@ -47,3 +50,11 @@ function y() {
 [[ -f /home/user/.dart-cli-completion/zsh-config.zsh ]] && . /home/user/.dart-cli-completion/zsh-config.zsh || true
 # source ~/.zsh_spotify
 # source ~/.zsh_bitwarden
+#
+export PATH=$PATH:/opt/cisco/secureclient/bin
+eval "$(atuin init zsh)"
+alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+
+alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+alias svn="svn --config-dir $XDG_CONFIG_HOME/subversion"

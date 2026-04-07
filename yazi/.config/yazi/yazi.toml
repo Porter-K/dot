@@ -2,6 +2,11 @@ play = [
     { run = 'vlc "$@"', desc = "VLC", orphan = true }
 ]
 
+[opener]
+firefox = [
+    { run = 'firefox "$@"', orphan = true, desc = "Open in Firefox" }
+]
+
 [mgr]
 linemode = "size" # default = "none"
 ratio = [2, 3, 5] # default = [1, 4, 3]
@@ -13,5 +18,6 @@ max_height      = 1964 # default = 900
 [open]
 rules = [
   { mime = "video/*", use = [ "play", "reveal" ] },
+  { name = "*.pdf", use = "firefox" },
 ]
 
