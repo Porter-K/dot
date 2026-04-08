@@ -1,6 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
-  "runtime.version": "LuaJIT",
+  "runtime": {
+    "version": "LuaJIT"
+  },
+  "diagnostics": {
+    "disable": ["missing-fields"]
+  },
   "runtime.path": [
     "lua",
     "lua/?.lua",
@@ -10,18 +15,22 @@
     "$XDG_DATA_HOME/nvim/lazy",
     "$XDG_DATA_HOME/nvim/lazy/catppuccin/lua/catppuccin"
   ],
-  "workspace.checkThirdParty": false,
-  "workspace.library": [
-    "$VIMRUNTIME/lua",
-    "${3rd}/luv/library",
-    "lua/lib/icons.lua",
-    "$XDG_DATA_HOME/nvim/lazy/catppuccin/lua/catppuccin",
-    "$XDG_DATA_HOME/nvim/lazy/multicursor.nvim/lua/multicursor-nvim",
-    "$XDG_DATA_HOME/nvim/lazy/markview.nvim/lua/markview"
-  ],
-  "hint.enable": true,
-  "hint.setType": true,
-  "hint.arrayIndex": "Disable",
-  "diagnostics.disable": ["missing-fields"],
-  "telemetry.enable": false
+  "workspace": {
+    "checkThirdParty": false,
+    "library": [
+      "$VIMRUNTIME/lua",
+      "${3rd}/luv/library",
+      "lua/lib/icons.lua"
+    ],
+    "pullPriority": "High"
+  },
+  "hint": {
+    "enable": true,
+    "setType": true,
+    "arrayIndex": "Disable"
+  },
+  "telemetry": {
+    "enable": false
+  }
 }
+

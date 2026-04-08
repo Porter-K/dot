@@ -1,4 +1,11 @@
-require("config.lazy")
-require("config.opts")
-require("config.keys")
-require("config.autocmds")
+require("plugins")
+
+require("opts")
+require("keys")
+
+require("setup")
+
+require("lsp")
+require("blink")
+require("format")
+require("surround")
