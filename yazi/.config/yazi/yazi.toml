@@ -18,6 +18,7 @@ max_height      = 1964 # default = 900
 [open]
 rules = [
   { mime = "video/*", use = [ "play", "reveal" ] },
-  { name = "*.pdf", use = "firefox" },
+  # { name = "*.pdf", use = "firefox" },
+  { mime = "pdf", use = "firefox" },
 ]
 

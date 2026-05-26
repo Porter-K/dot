@@ -24,67 +24,46 @@ lsp.config["zls"] = {
 }
 lsp.enable("zls")
 
+-- Rust
+lsp.config["rust_analyzer"] = {
+    cmd = { "rust-analyzer" },
+    filetypes = { "rust" },
+    root_markers = { ".git", "Cargo.toml", "Cargo.lock" },
+    settings = {},
+}
+lsp.enable("rust_analyzer")
+
 -- Python
 lsp.config["ty"] = {
     cmd = { "ty", "server" },
     filetypes = { "python" },
-    root_markers = { "ty.toml", "pyproject.toml", ".git" },
+    root_markers = {
+        "ty.toml",
+        "pyproject.toml",
+        "setup.py",
+        "setup.cfg",
+        "requirements.txt",
+        ".git",
+    },
     settings = {},
 }
 lsp.enable("ty")
 
 lsp.config["ruff"] = {
-    cmd = { "ruff" },
+    cmd = { "ruff", "server" },
     filetypes = { "python" },
-    root_markers = { ".git", "pyproject.toml" },
+    root_markers = { "pyproject.toml", "ruff.toml", ".ruff.toml", ".git" },
     settings = {},
 }
 lsp.enable("ruff")
 
-lsp.config["pylsp"] = {
-    cmd = { "pylsp" },
+lsp.config["pyrefly"] = {
+    cmd = { "pyrefly", "lsp" },
     filetypes = { "python" },
-    root_markers = {
-        "pyproject.toml",
-        "setup.py",
-        "setup.cfg",
-        "requirements.txt",
-        "Pipfile",
-        ".git",
-        "__init__.py",
-    },
-    settings = {
-        pylsp = {
-            plugins = {
-                pycodestyle = {
-                    ignore = { "W391", "E203", "W503" },
-                    maxLineLenght = 100,
-                    enabled = true,
-                },
-                mypy = {
-                    enabled = true,
-                },
-            },
-        },
-    },
-}
-lsp.enable("pylsp")
-
-lsp.config["pyright"] = {
-    cmd = { "pyright" },
-    filetypes = { "python" },
-    root_markers = {
-        "pyproject.toml",
-        "setup.py",
-        "setup.cfg",
-        "requirements.txt",
-        "Pipfile",
-        ".git",
-        "__init__.py",
-    },
+    root_markers = { "pyproject.toml", "ruff.toml", ".ruff.toml", ".git" },
     settings = {},
 }
-lsp.enable("pyright")
+lsp.enable("pyrefly")
 
 -- C/C++
 lsp.config["clang"] = {

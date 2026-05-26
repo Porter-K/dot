@@ -17,6 +17,8 @@ opt.relativenumber = true
 opt.cursorline = true
 opt.termguicolors = true
 
+opt.mouse = ""
+
 opt.wrap = false
 opt.ignorecase = true
 opt.swapfile = false
@@ -34,3 +36,12 @@ opt.cursorline = true
 cmd.colorscheme("catppuccin")
 
 cmd.filetype("plugin indent on")
+
+opt.foldmethod = "expr"
+opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+opt.foldcolumn = "0"
+opt.foldtext = ""
+opt.foldlevel = 99
+opt.foldlevelstart = 1
+opt.foldnestmax = 6
+opt.foldmethod = "manual"

@@ -7,6 +7,17 @@ key.set("n", "<c-k>", "<cmd><C-a>TmuxNavigateUp<cr>")
 key.set("n", "<c-l>", "<cmd><C-a>TmuxNavigateRight<cr>")
 key.set("n", "<c-\\>", "<cmd><C-a>TmuxNavigatePrevious<cr>")
 
+key.set("n", "<Leader>-", "<cmd>split<CR>")
+key.set("n", "<Leader>|", "<cmd>vsplit<CR>")
+key.set("n", "<Leader>sh", "<cmd>split<CR>")
+key.set("n", "<Leader>sv", "<cmd>vsplit<CR>")
+
+key.set("i", "jj", "<esc>")
+key.set("n", "g/", ":noh<CR>")
+key.set("n", "<Leader>mm", "<cmd>make<CR>")
+key.set("n", "<Leader>mr", "<cmd>make run<CR>")
+key.set("n", "<Leader>mt", "<cmd>make test<CR>")
+
 local fzf = require("fzf-lua")
 key.set("n", "<Leader>ff", fzf.files, { desc = "Open file finder" })
 key.set("n", "<Leader>fg", fzf.grep, { desc = "Grep files" })
