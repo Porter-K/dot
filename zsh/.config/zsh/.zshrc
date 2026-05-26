@@ -7,7 +7,7 @@ zstyle ':vcs_info:*' formats '%F{red}%b%f' # git(main)
 # Prompts
 setopt PROMPT_SUBST
 precmd () { vcs_info } # always load before displaying the prompt
-PS1='[%j] %F{blue}%0~%f $vcs_info_msg_0_ %F{yellow}%(!.#.$)%f ' # [processes] cwd branch $
+PS1='[%j] %F{blue}%0~%f $vcs_info_msg_0_ %(?.%F{green}.%F{red}[%?]) %(!.#.$)%f ' # [processes] cwd branch $
 # Right prompt show time
 RPROMPT="%T"
 
